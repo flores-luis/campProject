@@ -1,0 +1,30 @@
+/*
+
+This is our CSS style sheet
+
+*/
+
+* {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------------------------- Main Div Container Styling ----------------------------------------- */
+#img-div {
+    height: 90vh;
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#title {
+    color: rgb(255, 255, 255);
+    text-decoration: currentColor;
+    font-size: 50px;
+    padding: 400px 400px 0 100px;
+}
+
+#img-div > p {
+    padding: 0 0 0 100px;
+    color: rgb(255, 255, 255);
+}
