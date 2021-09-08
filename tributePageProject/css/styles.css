@@ -28,3 +28,41 @@ This is our CSS style sheet
     padding: 0 0 0 100px;
     color: rgb(255, 255, 255);
 }
+
+/* ----------------------------------------- Section Styling  ----------------------------------------- */
+
+#tribute-info {
+    text-align: center;
+}
+
+#tribute-info > h3 {
+    padding: 30px;
+}
+
+li > p {
+    text-align: left;
+    padding: 5px 0;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 370px;
+}
+#tribute-info > .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 350px;
+    font-style: italic;
+    justify-content: space-around;
+}
+
+.secondP {
+    padding: 7px;
+    font-size: 10px;
+}
+
+/* ----------------------------------------- Section Styling  ----------------------------------------- */
+
+footer {
+    text-align: center;
+}
