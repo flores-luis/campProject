@@ -32,7 +32,10 @@ This is our CSS style sheet
 }
 
 img {
+    height: auto;
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
 }
 /* ----------------------------------------- Section Styling  ----------------------------------------- */
@@ -83,7 +86,6 @@ footer {
     /*----Main Div Container Styling----*/
     #img-div {
         height: 50vh;
-        width: 100%;
     }
     #title {
         font-size: 25px;
