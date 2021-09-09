@@ -15,28 +15,30 @@ This is our CSS style sheet
     background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 #title {
     color: rgb(255, 255, 255);
-    text-decoration: currentColor;
     font-size: 50px;
-    padding: 400px 400px 0 100px;
 }
 
 #img-div > p {
-    padding: 0 0 0 100px;
     color: rgb(255, 255, 255);
 }
 
 /* ----------------------------------------- Section Styling  ----------------------------------------- */
 
 #tribute-info {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #tribute-info > h3 {
-    padding: 30px;
+    padding: 15px;
 }
 
 li > p {
@@ -46,12 +48,12 @@ li > p {
 ul {
     display: flex;
     flex-direction: column;
-    padding: 5px 370px;
+    padding: 5px 220px;
 }
 #tribute-info > .container {
     display: flex;
     flex-direction: column;
-    padding: 10px 350px;
+    padding: 5px 220px;
     font-style: italic;
     justify-content: space-around;
 }
@@ -61,8 +63,56 @@ ul {
     font-size: 10px;
 }
 
-/* ----------------------------------------- Section Styling  ----------------------------------------- */
+/* ----------------------------------------- Footer Styling  ----------------------------------------- */
 
 footer {
     text-align: center;
+}
+
+
+/* ----------------------------------------- Media Queries  ----------------------------------------- */
+
+/*Tablet Display-------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    /*----Main Div Container Styling----*/
+    #img-div {
+        height: 50vh;
+        width: 100%;
+    }
+    #title {
+        font-size: 25px;
+    }
+    /*--------Section Styling--------*/
+    #tribute-info {
+        color: white;
+        background-color: lightslategray;
+    }
+}
+/*Phone Display---------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    /*----Main Div Container Styling----*/    
+    #img-div {
+        height: 30vh;
+        justify-content: center;
+    }
+    #img-div > p {
+        padding: 10px 100px;
+    }
+    /*--------Section Styling--------*/
+    ul,
+    #tribute-info > .container {
+        padding: 5px 100px;
+    }
+    #tribute-info {
+        color: white;
+        background-color: darkgrey;
+    }
+    /*--------Footer--------*/
+    footer {
+        padding: 0 100px;
+    }
+    footer > h1,
+    h1 > a {
+        font-size: 10px;
+    }
 }
