@@ -5,13 +5,13 @@ This is our CSS style sheet
 */
 
 * {
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
     padding: 0;
 }
 /* ----------------------------------------- Main Div Container Styling ----------------------------------------- */
 #img-div {
-    height: 90vh;
+    height: 70vh;
     background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -23,12 +23,18 @@ This is our CSS style sheet
 #title {
     color: rgb(255, 255, 255);
     font-size: 50px;
+    padding: 5px 50px;
 }
 
 #img-div > p {
     color: rgb(255, 255, 255);
+    padding: 5px 50px;
 }
 
+img {
+    max-width: 100%;
+    text-align: center;
+}
 /* ----------------------------------------- Section Styling  ----------------------------------------- */
 
 #tribute-info {
@@ -86,6 +92,10 @@ footer {
     #tribute-info {
         color: white;
         background-color: lightslategray;
+    }
+    ul,
+    #tribute-info > .container {
+        padding: 5px 100px;
     }
 }
 /*Phone Display---------------------------------------------------------------*/
